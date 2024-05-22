@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+<body>
+<script src="https://op-5479.ui.orionprotocol.io/widget/integration-iframe.js"></script>
+<div id="orion-widget"></div>
+<script>
+  initOrionWidgetInIframe({
+    partnerId: '1',
+    containerSelector: '#orion-widget',
+    iframeClass: 'w-full',
+    height: 389,
+    width: 314,
+    options: {
+      defaultTheme: 'dark',
+      assetFrom: 'USDT',
+      assetTo: 'ORN',
+      allowedAssets: 'ORN, USDT',
+      feeAsset: 'ORN',
+      priceDeviation: 2,
+      widgetOwner: '0x0000000000000000',
+    },
+  });
+</script>
+</body>
+</html>
